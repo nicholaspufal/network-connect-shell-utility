@@ -1,0 +1,17 @@
+## Network Connect - Shell utility to connect to a VPN
+
+One annoying thing to connect to a VPN is the amount of time spent between opening the app, the RSA token, the password manager tool, etc. Then the connection drops because your computer went into sleep mode, and you need to do all over again.
+
+This should help you to limit all of those steps to only copy the RSA token and execute a shell script.
+
+### How to use it
+
+1. Modify `vpn-connect.applescript` replacing the username, password and network variables.
+
+2. Run `chmod +x vpn-connect.sh` - only the first time, to be able to execute it
+
+3. From now on, you will only need to execute `./vpn-connect.sh <RSA token number>` to connect to the VPN
+
+I left under `utils/` the script that I used to retrieve the location for each component of the interface. This might be handy if you plan to play with this code.
+
+Have fun!
